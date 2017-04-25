@@ -20,7 +20,7 @@
 * Git 다운로드 및 설치 <https://git-scm.com/downloads>  
   Git 시작하기 <https://goo.gl/hqYsPC>    
  
- * NVM 다운로드 및 설치 <https://github.com/creationix/nvm>  
-  Nodejs 설치 <https://nodejs.org/en/>  
-  node 설치 후 nvm use 7.9.0  
+* NVM 다운로드 및 설치 <https://github.com/creationix/nvm>  
+  Nodejs 설치 <https://nodejs.org/en/>  
+  node 설치 후 nvm use 7.9.0  
  
