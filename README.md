@@ -16,3 +16,7 @@
   web developer tool  
   headingsmap  
   open wax
+
+* Git 다운로드 및 설치 <https://git-scm.com/downloads>  
+* Git 시작하기 <https://goo.gl/hqYsPC>  
+
