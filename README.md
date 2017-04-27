@@ -24,7 +24,7 @@
   Nodejs 설치 <https://nodejs.org/en/>  
   node 설치 후 nvm use 7.9.0  
   
-* npm으로 node-sass install  
+* npm으로 node-sass install  
   npm install --global node-sass  
   
  
