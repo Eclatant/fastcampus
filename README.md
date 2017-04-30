@@ -1,5 +1,5 @@
-###### 프론트엔드 개발 스쿨 4기
-<img src="../ASSETS/table-of-contents.png" alt="" align="right" width="134" height="160">
+# 프론트엔드 개발 스쿨 4기
+<img src="ASSETS/table-of-contents.png" alt="" align="right" width="134" height="160">
 
 # 진행 내용 목차
 
