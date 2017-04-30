@@ -8,26 +8,24 @@
     * headingsmap
     * open wax
 
-* Visual Studio Code <https://code.visualstudio.com/>  다운로드 후 설치  
-  확장 -> 실습에 도움이되는 Extension 설치  
-  open in browser   
-  Mithril Emmet    
-  HTML Snippets  
-  HTMLHint    
-  IntelliSense for CSS class names   
-  VS Color Picker   
-  VS Code CSS Comments  
-  
-* Mozilla Firefox <https://www.mozilla.org/ko/firefox/new/>  
-* Firefox 부가기능 설치  
-  firebug  
-  web developer tool  
-  headingsmap  
-  open wax
+2. Git [다운로드](ttps://git-scm.com/downloads) 및 설치
+   Git [시작하기](https://goo.gl/hqYsPC)
 
-* Git 다운로드 및 설치 <https://git-scm.com/downloads>  
-  Git 시작하기 <https://goo.gl/hqYsPC>    
- 
-* NVM 다운로드 및 설치 <https://github.com/creationix/nvm>  
-  Nodejs 설치 <https://nodejs.org/en/>  
-  node 설치 후 nvm use 7.9.0  
+3. Visual Studio Code [다운로드](https://code.visualstudio.com/) 및 설치
+   확장 항목에서 실습에 필요한 Extension 설치
+   * open in browser
+   * Mithril Emmet    
+   * HTML Snippets  
+   * HTMLHint    
+   * IntelliSense for CSS class names   
+   * VS Color Picker   
+   * VS Code CSS Comments
+   * Beautify css/sass/scss/less
+   * Sass
+   * Sass Lint   
+   * Sass IntelliSense  
+  
+4. NVM [다운로드](https://github.com/creationix/nvm) 및 설치
+5. NVM을 사용하여 Nodejs 설치  
+   설치할 node [버전](https://nodejs.org/en/) 확인  
+   NVM으로 node 설치 후 nvm use 명령을 통해 node 활성화  
