@@ -1,4 +1,4 @@
-/* Main Menu */
+/* 메인 메뉴 제어하기 */
 window.onload = init;
 // 메인 페이지 초기화
 function init(){
