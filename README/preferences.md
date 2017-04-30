@@ -8,7 +8,7 @@
     * headingsmap
     * open wax
 
-2. Git [다운로드](ttps://git-scm.com/downloads) 및 설치
+2. Git [다운로드](ttps://git-scm.com/downloads) 및 설치  
    Git [시작하기](https://goo.gl/hqYsPC)
 
 3. Visual Studio Code [다운로드](https://code.visualstudio.com/) 및 설치
