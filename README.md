@@ -8,3 +8,4 @@
 > - __[HTML5&CSS3/ARIA](README/html.md)__ │ HTML5, CSS3 명세 및 ARIA
 > - __[Sass](README/sass.md)__ │ Sass(Syntactically Awesome Style Sheets) 
 > - __[RWD](README/rwd.md)__ │ RWD(Responsive Web Design)
+> - __[bash_profile](README/bash.md)__ │ .bash_profile 환경설정
