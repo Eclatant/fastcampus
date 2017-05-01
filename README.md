@@ -1,6 +1,6 @@
-# 프론트엔드 개발 스쿨 4기
+# 시작하기
 
-## 실습을 위한 자료 클론
+## 실습을 위한 수업자료 가져오기
 
 1. seulbinim/FDS04 Git 저장소에서 Clone or download 버튼을 선택 한 후 URL을 복사한다.
 2. Visual Studio Code를 실행한 후 도움말 메뉴의 시작을 선택한다.
