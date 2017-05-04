@@ -44,7 +44,7 @@ a:hover, a:focus{
 }
 /* 헤더 */
 .header{
-    background: yellow;
+    background: #fff;
     position: relative;
     padding: 0 30px;
 }
@@ -60,25 +60,25 @@ a:hover, a:focus{
 }
 /* 안내 링크 */
 .info-menu{
-    background: yellowgreen;
     list-style: none;
-    padding: 0;
+    padding: 2px 0;
     margin: 0;
     text-align: right;
 }
-.info-menu li{
-    display: inline;
-    background: skyblue;
-    margin-right: 7px;
+.info-menu li, .info-menu a{
+    display: inline-block;
 }
-.info-menu li:first-child::before{
-    content: "";
-    margin-right: 0;
+.info-menu a{
+    padding: 8px 0 8px 8px;
+    text-transform: uppercase;
 }
-.info-menu li::before{
+.info-menu a::after{
     content: ":";
-    background: purple;
-    margin-right: 10px;
+    padding-left: 10px;
+}
+.info-menu li:last-child a::after{
+    content: "";
+    padding-left: 0;
 }
 /* 비주얼 */
 .visual{
