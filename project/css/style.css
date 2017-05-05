@@ -64,7 +64,7 @@ a:hover, a:focus{
     display: block;
 }
 /* 안내 링크 */
-.info-menu{
+/*.info-menu{
     list-style: none;
     padding: 2px 0;
     margin: 0;
@@ -84,12 +84,29 @@ a:hover, a:focus{
 .info-menu li:last-child a::after{
     content: "";
     padding-left: 0;
+}*/
+.info-menu{
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px 0;
+    text-transform: uppercase;
+}
+.info-menu a{
+    display: block;
+    padding: 8px 0 8px 8px;
+}
+.info-menu li:not(:last-child) a::after{
+    content: ":";
+    padding-left: 8px;
+    position: relative;
+    top: -2px;
 }
 /* 메인 메뉴 */
-.main-menu{
+/*.main-menu{
     background-color: yellow;
     background-image: linear-gradient(to bottom, #eaac2e 0%, #f2752e 35%, #f2752e 65%, #eaac2e 100%);
-    /*background: #000 linear-gradient(to bottom, rgba(255,0,0,0.5) 0%, rgba(0,255,0,0.5) 50%, rgba(0,0,255,0.5) 100%);*/
     margin: 0;
     list-style: none;
     padding-left: 225px;
@@ -168,8 +185,180 @@ a:hover, a:focus{
 .main-menu ul a::before{
     content: "r";
     font-family: 'webcafeIcon';
-    /*position: relative;
-    top: 2px;*/
+    vertical-align: middle;
+}
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before{
+    content: "c";
+}*/
+/*
+.main-menu{
+    background-color: #f2752e;
+    background-image: linear-gradient(to bottom, #eaac2e 0%, #f2752e 35%, #f2752e 65%, #eaac2e 100%);
+    display: flex;
+    padding-left: 225px;
+    list-style: none;
+    margin: 0;
+    height: 45px;
+    border-top:2px solid #000;
+    border-radius: 0 0 5px 5px;
+}
+.main-menu a{
+    outline: 0;
+}
+.main-menu > li{
+    position: relative; 
+    flex: 1 0 auto;
+}
+.main-menu > li > a{
+    display: block;
+    line-height: 45px;
+    font-family: "Noto Sans Bold";
+    color: #fff;
+    font-size: 1.6rem;
+    border-left: 1px solid #fff;
+    text-align: center;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.5), 0 1px 0 rgba(0,0,0,0.5), -1px 0 0 rgba(0,0,0,0.5), 0 -1px 0 rgba(0,0,0,0.5);
+}
+.main-menu > li > a:hover, 
+.main-menu > li > a:focus{
+    color: #ff0;
+}
+.main-menu > li > a:hover::after, 
+.main-menu > li > a:focus::after{
+    content: "";
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    height: 2px;
+    background: #000;   
+}
+.main-menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    top: 47px;  
+}
+.about-html{
+    display: none;
+    left: 0;   
+}
+.about-css{
+    display: none;
+    left: 0;
+}
+.web-standard{
+    display: none;
+    left: 0;
+}
+.web-accessibility{
+    display: none;
+    left: -130px;
+}
+.qna{
+    display: none;
+    left: -155px;
+}
+.archive{
+    display: none;
+    right: 0;
+}
+.main-menu ul li, .main-menu ul a{
+    display: inline-block;
+}
+.main-menu ul a{
+    padding: 6px 0 5px 0;
+    margin-right: 10px;
+}
+.main-menu ul a::before{
+    content: "r";
+    font-family: 'webcafeIcon';
+    vertical-align: middle;
+}
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before{
+    content: "c";
+}*/
+.main-menu{
+    background-color: #f2752e;
+    background-image: linear-gradient(to bottom, #eaac2e 0%, #f2752e 35%, #f2752e 65%, #eaac2e 100%);
+    display: flex;
+    padding-left: 225px;
+    list-style: none;
+    margin: 0;
+    height: 45px;
+    border-top:2px solid #000;
+    border-radius: 0 0 5px 5px;
+}
+.main-menu > li{
+    position: relative; 
+    flex: 1 0 auto;
+}
+.main-menu > li > a{
+    display: block;
+    line-height: 45px;
+    font-family: "Noto Sans Bold";
+    color: #fff;
+    font-size: 1.6rem;
+    border-left: 1px solid #fff;
+    text-align: center;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.5), 0 1px 0 rgba(0,0,0,0.5), -1px 0 0 rgba(0,0,0,0.5), 0 -1px 0 rgba(0,0,0,0.5);
+}
+.main-menu > li > a:hover{
+    color: #ff0;
+}
+.main-menu > li > a:hover::after{
+    display: block;
+    content: "";
+    height: 2px;
+    background: #000;
+    width: 70%;
+    margin: 0 auto;
+}
+.main-menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    top: 47px;  
+}
+.about-html{
+    display: block;
+    left: 0;   
+}
+.about-css{
+    display: none;
+    left: 0;
+}
+.web-standard{
+    display: none;
+    left: 0;
+}
+.web-accessibility{
+    display: none;
+    left: -130px;
+}
+.qna{
+    display: none;
+    left: -155px;
+}
+.archive{
+    display: none;
+    right: 0;
+}
+.main-menu ul li, .main-menu ul a{
+    display: inline-block;
+}
+.main-menu ul a{
+    padding: 6px 0 5px 0;
+    margin-right: 10px;
+}
+.main-menu ul a::before{
+    content: "r";
+    font-family: 'webcafeIcon';
     vertical-align: middle;
 }
 .main-menu ul a:hover::before,
