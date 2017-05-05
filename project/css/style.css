@@ -4,10 +4,13 @@
 html, body{
     margin: 0;
 }
+html{
+    font-size: 10px;
+}
 body{
     background: #fff;
     color: #181818;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-family: 'Noto Sans Regular';
     line-height: 1.2;
 }
@@ -22,6 +25,7 @@ body{
     clip: rect(0 0 0 0);
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
+    position: absolute;
 }
 /* 링크 스타일 */
 
@@ -46,7 +50,7 @@ a:hover, a:focus{
 .header{
     background: #fff;
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 30px;
 }
 /* 로고 */
 .logo{
@@ -79,6 +83,49 @@ a:hover, a:focus{
 .info-menu li:last-child a::after{
     content: "";
     padding-left: 0;
+}
+/* 메인 메뉴 */
+.main-menu{
+    background-color: yellow;
+    background-image: linear-gradient(to bottom, #eaac2e 0%, #f2752e 35%, #f2752e 65%, #eaac2e 100%);
+    /*background: #000 linear-gradient(to bottom, rgba(255,0,0,0.5) 0%, rgba(0,255,0,0.5) 50%, rgba(0,0,255,0.5) 100%);*/
+    margin: 0;
+    list-style: none;
+    padding-left: 225px;
+    height: 45px;
+    border-top:2px solid #000;
+    border-radius: 0 0 5px 5px;
+}
+.main-menu > li{
+    float: left; 
+}
+.main-menu > li > a{
+    display: block;
+    line-height: 45px;
+    font-family: "Noto Sans Bold";
+    color: #fff;
+    font-size: 1.6rem;
+    border-left: 1px solid #fff;
+    padding: 0 20px;
+    text-shadow: 1px 0 0 rgba(0,0,0,0.5), 0 1px 0 rgba(0,0,0,0.5), -1px 0 0 rgba(0,0,0,0.5), 0 -1px 0 rgba(0,0,0,0.5);
+}
+.main-menu > li > a:hover{
+    color: #ff0;
+}
+.main-menu > li > a:hover::after{
+    content: "";
+    background: green;
+    display: block;
+    height: 2px;
+    background: #000;
+}
+.main-menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    background: pink;
+    position: absolute;
+    display: none;
 }
 /* 비주얼 */
 .visual{
