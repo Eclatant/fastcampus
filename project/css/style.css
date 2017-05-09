@@ -437,29 +437,163 @@ a:hover, a:focus{
 }
 /* 로그인 */
 .login{
-    background: orange;
+    background: radial-gradient(circle at top right, #eaac2e , #f2752e);
+    padding: 10px;
+    border-radius: 10px;
 }
 .login-heading{
     margin: 0;
     font-size: 1.6rem;
+    color: #ff0;
+    padding-left: 10px;
 }
-.login fieldset{
+.login-form{
+    background: #fff;
+    margin-top: 10px;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px 10px 0 0;
+}
+.login-form fieldset{
     border: 0 none;
+    padding: 0 0 5px 0;
+    margin: 0;
+    position: relative;
+    border-bottom: 1px solid #aaa;
+}
+.user-email, .user-pw{
+    padding-bottom: 5px;
+}
+.login-form label{
+    width: 4em;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.login-form input{
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    width: 90px;
+    height: 22px;
+    padding: 1px 1px 1px 5px;
+}
+.btn-login{  
+    box-sizing: border-box;
+    position: absolute;
+    width: 50px;    
+    height: 50px;  
+    border: 1px solid #f00;
+    background: #f00;
     padding: 0;
     margin: 0;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Noto Sans Bold";
+    font-size: 1.2rem;
 }
 .member-info{
     list-style: none;
     padding-left: 0;
     margin: 0;
+    padding: 2px 10px;
+    background: #fff;
+    border-radius: 0 0 10px 10px;
 }
-
-
+.member-info::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.member-info li:nth-of-type(1){
+    float: left;
+}
+.member-info li:nth-of-type(2){
+    float: right;
+}
+.member-info a{
+    padding: 8px 0;
+    display: block;
+    letter-spacing: -1px;
+}
+.member-info a::before{
+    content: "g";
+    font-family: 'webcafeIcon';
+    color: #f00;
+    position: relative;
+    top: 2px;
+}
+/*  유효성 검사 배너링크 */
+.validation-list{
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0 0 0;
+}
+.validation-list a{
+    background: url(images/validation_icon.png) no-repeat 15px 50%,
+    linear-gradient(to bottom, #eee 0%, #ccc 100%);
+    background-size: 15px 15px, 100% 100%;
+    display: block;
+    border: 1px solid #aaa;
+    border-radius: 15px;
+    margin: 10px 0;
+    height: 30px;
+    line-height: 30px;
+    text-indent: 45px;  
+}
 /* 컬럼 2 */
 .group2{
     background: tomato;
     width: 380px;
 }
+/* 웹 관련 용어 */
+.term{
+    background: #ccc linear-gradient(to bottom, #eee, #ccc);
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 15px;   
+}
+.term-heading{
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: 'Noto Sans Bold', sans-serif;
+}
+.term-list{
+    margin: 10px 0 0 0;
+}
+.term-list::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.term-list dt{
+    float: right;
+    width: 145px;
+    margin-bottom: 5px;
+    color: #296897;
+    font-weight: 700;
+}
+.term-list dd{
+    margin: 0;
+}
+.term-list dd:nth-of-type(1){
+    float: left;
+}
+.term-list dd:nth-of-type(2){
+    width: 145px;
+    float: right;
+    line-height: 1.5;
+}
+.term .term-list:nth-of-type(2) dt,
+.term .term-list:nth-of-type(2) dd:nth-of-type(2){
+    float: left;
+}
+.term .term-list:nth-of-type(2) dd:nth-of-type(1){
+    float: right;
+}
+
 /* 컬럼 3 */
 .group3{
     background: pink;
