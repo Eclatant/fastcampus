@@ -440,6 +440,7 @@ a:hover, a:focus{
     background: radial-gradient(circle at top right, #eaac2e , #f2752e);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.5);
 }
 .login-heading{
     margin: 0;
@@ -544,8 +545,131 @@ a:hover, a:focus{
 }
 /* 컬럼 2 */
 .group2{
-    background: tomato;
     width: 380px;
+}
+/* 검색 */
+.search{
+    border: 1px solid #aaa;
+    border-bottom-color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 15px 25px 10px 25px;
+    background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 60%, #fff 100%);
+}
+.search-form fieldset{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.search-form label{
+    margin-right: 5px;
+}
+.search-form label::before{
+    content: "z";
+    font-family: 'WebcafeIcon';
+    font-size: 1.6rem;
+    position: relative;
+    top: 3px;
+}
+.search-form input{
+    box-sizing: border-box;
+    width: 200px;
+    height: 22px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 5px;
+    margin-right: 4px;
+}
+.btn-search{
+    border: 1px solid #aaa;
+    background: #333 linear-gradient(to bottom, #999, #333);
+    color: #fff;
+    padding: 1px 10px 1px 10px;
+    font-size: 1.3rem;
+    border-radius: 3px;
+}
+/* 공지사항 및 자료실 */
+.board{
+    background: yellow;
+    margin-top: 20px;
+    position: relative; 
+    height: 180px;  
+}
+.notice-heading, .pds-heading{
+    margin: 0;
+    font-size: 1.4rem;
+    background: skyblue;
+    float: left;
+}
+a.tab{
+    background: #eee linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    color: #666;
+    display: block;
+    padding: 5px 10px;
+}
+.board-active .tab{
+    border-color: #f00 #f00 #fff #f00;
+    background: #fff;
+    color: #f00; 
+}
+.notice-list, .pds-list, .notice-more, .pds-more{
+    display: none;
+}
+.board-active [class$="list"], 
+.board-active [class$="more"]{
+    display: block !important;
+}
+.notice-list, .pds-list{
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    background: pink;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    left: 0;
+}
+.notice-list li,
+.pds-list li{
+    margin: 5px 0;
+}
+.notice-list li::before,
+.pds-list li::before{
+    content: "r";
+    font-family: 'webcafeIcon';
+}
+
+
+.notice-list a, 
+.pds-list a{
+    background: olive;
+    display: inline-block;
+    width: calc(100% - 90px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.pds-list{
+    background: orange
+}
+.board-date{
+    background: yellowgreen;
+    float: right;
+}
+.notice-more, .pds-more{
+    position: absolute;
+    top: 0;
+    right: -8px;
+    padding: 8px;
+}
+.notice-more::before, .pds-more::before{
+    content: "p";
+    font-family: 'webcafeIcon';
+    color: yellowgreen;
+    position: relative;
+    top: 2px;
+    margin-right: 3px; 
 }
 /* 웹 관련 용어 */
 .term{

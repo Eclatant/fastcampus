@@ -203,7 +203,77 @@
                     </dl>
                 </div>
             </div>
-            <div class="group group2">컬럼2</div>
+            <div class="group group2">
+                <div class="search">
+                    <h2 class="a11y-hidden">검색</h2>
+                    <form action="javascript:alert('검색이 완료되었습니다.');" class="search-form">
+                        <fieldset>
+                            <legend>검색 폼</legend>
+                            <label for="search-keyword">자료검색</label>
+                            <input type="search" id="search-keyword" required placeholder="검색어를 입력하세요.">
+                            <button class="btn-search">검색</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="board">
+                    <div class="notice board-active">
+                        <h2 class="notice-heading">
+                            <a href="#" class="tab">공지사항</a>
+                        </h2>
+                        <ul class="notice-list">
+                            <li>
+                                <a href="#" class="board-subject">HTML 모든 것을 알려주마 샘플 활용법</a>
+                                <time class="board-date" datetime="2017-05-10">2017.05.10</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject"> W3C 사이트 리뉴얼 소식 및 공지사항</a>
+                                <time class="board-date" datetime="2017-05-10">2017.05.10</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">KWCAG2.0 소식</a>
+                                <time class="board-date" datetime="2017-05-10">2017.05.10</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                                <time class="board-date" datetime="2017-05-10">2017.05.10</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                                <time class="board-date" datetime="2017-05-10">2017.05.10</time>
+                            </li>
+                        </ul>
+                        <a href="#" class="notice-more" title="공지사항" target="_blank">더보기</a>
+                    </div>
+                    <div class="pds">
+                        <h2 class="pds-heading">
+                            <a href="#" class="tab">자료실</a>
+                        </h2>
+                        <ul class="pds-list">
+                            <li>
+                                <a href="#" class="board-subject">디자인 사이트 링크 모음</a>
+                                <time class="board-date" datetime="2017-05-11">2017.05.11</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">웹 접근성 관련 자료 모음</a>
+                                <time class="board-date" datetime="2017-05-11">2017.05.11</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">예제 샘플 응용해 보기</a>
+                                <time class="board-date" datetime="2017-05-11">2017.05.11</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">웹 접근성 향상을 위한 국가표준 기술 가이드 라인</a>
+                                <time class="board-date" datetime="2017-05-11">2017.05.11</time>
+                            </li>
+                            <li>
+                                <a href="#" class="board-subject">로얄티 프리 이미지 자료</a>
+                                <time class="board-date" datetime="2017-05-11">2017.05.11</time>
+                            </li>
+                        </ul>
+                        <a href="#" class="pds-more" title="자료실" target="_blank">더보기</a>
+                    </div>
+                </div>
+            </div>
             <div class="group group3">컬럼3</div>
         </main>
         <article class="slogan">
@@ -215,5 +285,18 @@
             </footer>
         </div>        
     </div>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script>
+    $(function(){
+        $(".tab").click(function(e){
+            e.preventDefault();
+            $(this).parent().parent().addClass("board-active")
+            .siblings().removeClass("board-active");
+        });
+    });
+  </script>
 </body>
 </html>
