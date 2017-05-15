@@ -192,15 +192,6 @@
                             W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은..
                         </dd>
                     </dl>
-                    <dl class="term-list">
-                        <dt>웹표준 이란?</dt>
-                        <dd>
-                            <img src="images/web_standards.gif" alt="W3C 로고">
-                        </dd>
-                        <dd>
-                            W3C 단체에서 규정한 웹 기술 사양에 대한 규칙을 말하며 표준 규격은..
-                        </dd>
-                    </dl>
                 </div>
             </div>
             <div class="group group2">
@@ -343,26 +334,57 @@
             </div>
         </main>
         <article class="slogan">
-             슬로건
+            <h2 class="slogan-heading" title="Web Cafe 슬로건">
+                웹카페에서 웹표준을
+            </h2>
+            <p class="slogan-content">
+                <q cite="http://w3.org/WAI/">
+                The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect. 
+                </q>
+                <span>
+                    Tim Berners - Lee , W3C Director and inventor of the World Wide Web
+                </span>
+            </p>
+            <footer class="a11y-hidden">
+                출처 : http://w3.org/WAI/ - World Wide Web
+            </footer>
         </article>
         <div class="footer-bg">
             <footer class="footer">
-                푸터
+                 <a href="#" class="footer-logo">
+                    <img src="images/footer_logo.png" alt="Web Cafe">
+                 </a>
+                 <ul class="guide" aria-label="사이트 이용안내">
+                    <li><a href="#">회사 소개</a></li>
+                    <li><a href="#">개인정보 보호정책</a></li>
+                    <li><a href="#">이메일 주소 무단수집 거부</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">site map</a></li>
+                 </ul>
+                 <address class="address">
+                     <span>서울시 마포구 상수동 123번 한주빌딩 5층</span>
+                     <span>전화 : 02-3429-5114</span>
+                     <span>이메일 : <a href="mailto:seulbinim@gmail.com">seulbinim@gmail.com</a></span>
+                 </address>
+                 <div class="copyright">
+                     Copyright since &copy; 2010 by Web Cafe CORPORATION ALL RIGHTS RESERVED. 
+                 </div>
+                 <div class="tech-logo">
+                     <img src="images/html5_logo.png" alt="이 사이트는 HTML5 기술을 적용하였습니다.">
+                     <img src="images/css3_logo.png" alt="이 사이트는 CSS3를 활용하여 디자인 하였습니다.">
+                 </div>
             </footer>
         </div>        
     </div>
-    <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script>
-    $(function(){
-        $(".tab").click(function(e){
-            e.preventDefault();
-            $(this).parent().parent().addClass("board-active")
-            .siblings().removeClass("board-active");
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>
+        $(function(){
+            $(".tab").click(function(e){
+                e.preventDefault();
+                $(this).parent().parent().addClass("board-active")
+                .siblings().removeClass("board-active");
+            });
         });
-    });
-  </script>
+    </script>
 </body>
 </html>
