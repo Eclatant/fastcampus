@@ -1,4 +1,4 @@
-# 프론트엔드 개발 스쿨 4기 
+# 패스트캠퍼스 프론트엔드 개발 스쿨 
 <img src="ASSETS/table-of-contents.png" alt="" align="right" width="134" height="160">
 
 ## 수업진행을 위한 자료
