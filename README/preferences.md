@@ -11,7 +11,7 @@
 
 3. Visual Studio Code [다운로드](https://code.visualstudio.com/) 및 설치
    확장 항목에서 실습에 필요한 Extension 설치
-   * Live Server
+   * Live Server . 
    * JS-CSS-HTML Formatter
    * Auto Close Tag 
    * Path Autocomplete    
